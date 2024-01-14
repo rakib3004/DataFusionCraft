@@ -3,7 +3,7 @@ from PIL import Image
 import pytesseract
 
 # Path to the Tesseract executable (update it based on your installation)
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\pc\Documents\Github\DataFusionCraft\TextProcessing\Tesseract-OCR\tesseract.exe'
 
 def extract_bangla_text_from_image(image_path):
     # Open the image using PIL (Python Imaging Library)
@@ -15,7 +15,7 @@ def extract_bangla_text_from_image(image_path):
     return text
 
 # Example usage
-image_path = "page_5.png"
+image_path = "page_180.png"
 extracted_bangla_text = extract_bangla_text_from_image(image_path)
 
 print("Extracted Bangla Text:")
